@@ -58,6 +58,10 @@ model proposes; code verifies:
   day of disruption.)
 - Missing cost effect means "none". Missing end date means start + 6 days.
 
+The result is cached in `cache/note_facts.json`. The code guard on
+percentages worked in practice: on one run the model returned a magnitude
+of 100 for N002, which does not appear in the note, and the code discarded it.
+
 The result is cached in `cache/note_facts.json`. `aggregate.py` makes no LLM
 calls, and its `reason` text is a template filled with the note's own first
 sentence, so a reason cannot contain a fact that is not in a note.
@@ -116,17 +120,38 @@ thousands of free-text notes, where embedding retrieval would be needed.
   collision, and labels check verdicts, not numbers). The unit tests cover
   both gaps.
 
+## Reproducibility of the LLM step
+
+Temperature 0 and a fixed seed (42) do **not** make re-extraction
+repeatable. I re-ran `extract_notes.py --refresh` a third time and diffed
+the result against the committed cache: for N002 the model's `cost_effect`
+changed from "increase" to null (treated as "none"), which would turn
+Ahmedabad-Mumbai 2025-01-20 from justified to flagged. Output tokens also
+moved (344 to 341). The 3B model is borderline on N002 because the note says
+"temporary surcharge" without literally saying costs rose.
+
+So reproducibility rests on two things:
+- `cache/note_facts.json` is committed, and `aggregate.py` reads only that
+  file, so the three-run diff of the final CSV is identical.
+- A refreshed extraction is a proposal: diff it against the committed cache
+  and review every changed field before committing it.
+
+If someone deletes the cache and re-extracts, N002 may flip and the output
+may differ from the committed CSV.
+
 ## Cost of one full run
 
 From `cost_log.txt`: 10 LLM calls, 2,383 input tokens, 344 output tokens,
 local open-source model, so no API fee (0 INR). Model settings:
-temperature 0, seed 42.
+temperature 0, seed 42 (these reduce but do not remove variation, see
+above). Token counts from re-runs varied slightly (344 vs 341 output tokens).
 
 ## Known limitations
 
-- Re-running `--refresh` was not diffed byte-for-byte; the committed cache
-  is what makes the pipeline reproducible. Token counts were identical across
-  my two refresh runs (2,383 in / 344 out).
+- Re-extraction is not stable (see "Reproducibility of the LLM step"): N002
+  flipped once. The committed cache, reviewed against the notes, is the
+  source of truth. A stronger fix would be a code rule for explicit
+  surcharge or price-rise wording, or voting across several extractions.
 - N003 (diesel, "starting this week", 5-7%) has no end date, so it gets the
   6-day fallback. No candidate row falls in that window, so it never fires.
 - The stated magnitude is not compared to the observed rise: a 5-7% note
