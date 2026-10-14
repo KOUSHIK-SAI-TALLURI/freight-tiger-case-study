@@ -1,0 +1,182 @@
+[
+  {
+    "applies_to": "Chennai-Bangalore",
+    "facts": {
+      "cost_effect": "increase",
+      "end_date": "2025-03-08",
+      "magnitude_pct_max": null,
+      "start_date": "2025-02-24"
+    },
+    "input_tokens": 256,
+    "note_id": "N001",
+    "output_tokens": 48,
+    "raw_model_output": {
+      "cost_effect": "increase",
+      "duration_days": 15,
+      "end_date": "2025-03-09",
+      "magnitude_pct_max": 100
+    }
+  },
+  {
+    "applies_to": "Ahmedabad-Mumbai",
+    "facts": {
+      "cost_effect": "increase",
+      "end_date": "2025-01-26",
+      "magnitude_pct_max": null,
+      "start_date": "2025-01-20"
+    },
+    "input_tokens": 243,
+    "note_id": "N002",
+    "output_tokens": 36,
+    "raw_model_output": {
+      "cost_effect": "increase",
+      "duration_days": null,
+      "end_date": null,
+      "magnitude_pct_max": 100
+    }
+  },
+  {
+    "applies_to": "All Routes",
+    "facts": {
+      "cost_effect": "increase",
+      "end_date": "2025-05-11",
+      "magnitude_pct_max": 7,
+      "start_date": "2025-05-05"
+    },
+    "input_tokens": 236,
+    "note_id": "N003",
+    "output_tokens": 34,
+    "raw_model_output": {
+      "cost_effect": "increase",
+      "duration_days": null,
+      "end_date": null,
+      "magnitude_pct_max": 7
+    }
+  },
+  {
+    "applies_to": "All Routes",
+    "facts": {
+      "cost_effect": "none",
+      "end_date": "2024-03-17",
+      "magnitude_pct_max": null,
+      "start_date": "2024-03-11"
+    },
+    "input_tokens": 237,
+    "note_id": "N004",
+    "output_tokens": 32,
+    "raw_model_output": {
+      "cost_effect": null,
+      "duration_days": null,
+      "end_date": null,
+      "magnitude_pct_max": null
+    }
+  },
+  {
+    "applies_to": "Mumbai-Delhi",
+    "facts": {
+      "cost_effect": "none",
+      "end_date": "2024-08-04",
+      "magnitude_pct_max": null,
+      "start_date": "2024-07-29"
+    },
+    "input_tokens": 236,
+    "note_id": "N005",
+    "output_tokens": 34,
+    "raw_model_output": {
+      "cost_effect": "none",
+      "duration_days": 7,
+      "end_date": null,
+      "magnitude_pct_max": null
+    }
+  },
+  {
+    "applies_to": "All Routes",
+    "facts": {
+      "cost_effect": "none",
+      "end_date": "2025-09-28",
+      "magnitude_pct_max": null,
+      "start_date": "2025-09-22"
+    },
+    "input_tokens": 234,
+    "note_id": "N006",
+    "output_tokens": 32,
+    "raw_model_output": {
+      "cost_effect": null,
+      "duration_days": null,
+      "end_date": null,
+      "magnitude_pct_max": null
+    }
+  },
+  {
+    "applies_to": "Delhi-Jaipur",
+    "facts": {
+      "cost_effect": "none",
+      "end_date": "2024-05-26",
+      "magnitude_pct_max": null,
+      "start_date": "2024-05-20"
+    },
+    "input_tokens": 235,
+    "note_id": "N007",
+    "output_tokens": 32,
+    "raw_model_output": {
+      "cost_effect": null,
+      "duration_days": null,
+      "end_date": null,
+      "magnitude_pct_max": null
+    }
+  },
+  {
+    "applies_to": "Kolkata-Bhubaneswar",
+    "facts": {
+      "cost_effect": "none",
+      "end_date": "2025-06-15",
+      "magnitude_pct_max": null,
+      "start_date": "2025-06-09"
+    },
+    "input_tokens": 235,
+    "note_id": "N008",
+    "output_tokens": 32,
+    "raw_model_output": {
+      "cost_effect": null,
+      "duration_days": null,
+      "end_date": null,
+      "magnitude_pct_max": null
+    }
+  },
+  {
+    "applies_to": "Chennai-Bangalore",
+    "facts": {
+      "cost_effect": "none",
+      "end_date": "2025-03-23",
+      "magnitude_pct_max": null,
+      "start_date": "2025-03-17"
+    },
+    "input_tokens": 234,
+    "note_id": "N009",
+    "output_tokens": 32,
+    "raw_model_output": {
+      "cost_effect": null,
+      "duration_days": null,
+      "end_date": null,
+      "magnitude_pct_max": null
+    }
+  },
+  {
+    "applies_to": "All Routes",
+    "facts": {
+      "cost_effect": "none",
+      "end_date": "2025-11-02",
+      "magnitude_pct_max": null,
+      "start_date": "2025-10-27"
+    },
+    "input_tokens": 237,
+    "note_id": "N010",
+    "output_tokens": 32,
+    "raw_model_output": {
+      "cost_effect": null,
+      "duration_days": null,
+      "end_date": null,
+      "magnitude_pct_max": null
+    }
+  }
+]
