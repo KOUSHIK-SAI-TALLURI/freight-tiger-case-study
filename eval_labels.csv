@@ -1,0 +1,11 @@
+route,week_of,expected_flagged,expected_note_id,why
+Delhi-Jaipur,2024-11-11,Yes,,brief sample row; no Delhi-Jaipur or All Routes note near Nov 2024
+Ahmedabad-Mumbai,2025-01-20,No (justified),N002,brief sample row; N002 festival surcharge dated this week
+Mumbai-Pune,2025-09-15,Yes,,brief sample row; nearest note N006 says stable demand
+Chennai-Bangalore,2025-02-24,No (justified),N001,flood window Feb 24-Mar 8 covers this week
+Chennai-Bangalore,2025-03-03,No (justified),N001,week Mar 3-9 overlaps flood window ending Mar 8
+Chennai-Bangalore,2025-03-10,Yes,,flood window over; N001 says passable by Mar 9 so wrong window
+Chennai-Bangalore,2025-03-17,Yes,,N009 says back to normal; not a cost-rise reason
+Mumbai-Delhi,2025-05-12,absent,,diesel week; +11.6% own but only +6.7% vs peers so below peer threshold
+Delhi-Chennai,2024-02-05,absent,,largest noise week for this route; +8.5% own / +7.8% peers is ordinary variation
+Mumbai-Pune,2025-05-05,absent,,diesel week; +6.6% own / +8.8% peers is below peer threshold

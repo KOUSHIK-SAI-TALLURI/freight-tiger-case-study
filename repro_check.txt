@@ -1,0 +1,6 @@
+Comparing files run1.csv and RUN2.CSV
+FC: no differences encountered
+
+Comparing files run2.csv and RUN3.CSV
+FC: no differences encountered
+

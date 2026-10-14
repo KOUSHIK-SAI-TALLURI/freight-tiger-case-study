@@ -1,0 +1,6 @@
+One full run of extract_notes.py with local model qwen2.5:3b via Ollama
+LLM calls: 10
+Input tokens: 2383
+Output tokens: 344
+Cost at published rate: 0 INR, local open-source model, no API fee
+aggregate.py makes no LLM calls; it reads cache/note_facts.json

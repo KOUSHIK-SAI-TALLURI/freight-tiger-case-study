@@ -1,0 +1,12 @@
+{
+  "N001": {"start_date": "2025-02-24", "end_date": "2025-03-08", "cost_effect": "increase", "magnitude_pct_max": null},
+  "N002": {"start_date": "2025-01-20", "end_date": "2025-01-26", "cost_effect": "increase", "magnitude_pct_max": null},
+  "N003": {"start_date": "2025-05-05", "end_date": "2025-05-11", "cost_effect": "increase", "magnitude_pct_max": 7},
+  "N004": {"start_date": "2024-03-11", "end_date": "2024-03-17", "cost_effect": "none", "magnitude_pct_max": null},
+  "N005": {"start_date": "2024-07-29", "end_date": "2024-08-04", "cost_effect": "none", "magnitude_pct_max": null},
+  "N006": {"start_date": "2025-09-22", "end_date": "2025-09-28", "cost_effect": "none", "magnitude_pct_max": null},
+  "N007": {"start_date": "2024-05-20", "end_date": "2024-05-26", "cost_effect": "none", "magnitude_pct_max": null},
+  "N008": {"start_date": "2025-06-09", "end_date": "2025-06-15", "cost_effect": "none", "magnitude_pct_max": null},
+  "N009": {"start_date": "2025-03-17", "end_date": "2025-03-23", "cost_effect": "none", "magnitude_pct_max": null},
+  "N010": {"start_date": "2025-10-27", "end_date": "2025-11-02", "cost_effect": "none", "magnitude_pct_max": null}
+}
